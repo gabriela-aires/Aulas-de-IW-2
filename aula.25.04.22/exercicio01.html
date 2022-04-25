@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 01</title>
+</head>
+<body>
+    <h1> BRASILEIRO OU ESTRANGEIRO </h1>
+    BRA = 1
+    EUA = 2
+    digite o seu país: <input type="text" name="brasil" id="brasil"> 
+    <input type="button" value="VERIFICAR" onclick="calcular()"> 
+    <div id="resultado"></div>
+
+    <script>
+        function calcular() {
+            var brasil = document.querySelector('input#brasil')
+            var res = document.querySelector('div#resultado')
+
+            if(brasil>1){
+                res.innerHTML += `<p>Você é <strong>BRASILEIRO!</strong></p>`
+            }   
+            if(brasil<1){
+                res.innerHTML += `<p>Você é <strong>ESTRANGEIRO!</strong></p>`
+            }   
+        }
+    </script>
+</body>
+</html>
