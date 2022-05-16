@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio07</title>
+</head>
+<body>
+    <script>
+        var somapar = 0
+        var somaimpar = 0
+        for (var i=1;i<=10;1++){
+               // console.log(`${i}`);
+            var  numero = Number(prompt('digite um numero:'))   
+            if (numero % 2 == 0){
+                somapar = somapar + 1
+            }
+            else{
+                somaimpar = somaimpar + 1
+            }
+        }
+
+        console.log('Total de Pares==>',somapar)
+        console.log('Total de impares==>',somaimpar)
+    </script>
+</body>
+</html>
